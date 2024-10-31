@@ -10,9 +10,9 @@ router.put('/:id', eventController.updateEvent);
 //route pour supprimer un message
 router.delete('/:id', eventController.deleteEvent);
 //route pour ajouter un like
-router.patch('/like-post/:id', eventController.likeEvent);
+router.patch('/like-event/:id', eventController.likeEvent);
 //route pour retirer un like
-router.patch('/unlike-post/:id', eventController.unlikeEvent);
+router.patch('/unlike-event/:id', eventController.unlikeEvent);
 // route d'ajout de participant
 router.patch('/add-participant/:id', eventController.participantEvent);
 // route de suppression d'un participant
